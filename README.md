@@ -2,7 +2,7 @@
 
 Welcome to the repository of my personal developer portfolio! This website showcases my technical skills, featured projects, certifications, and more.
 
-**Live Site**: [ishu-portfolio.vercel.app](https://ishu-portfolio.vercel.app)
+**Live Site**: [ishu-igdtuw-portfolio.vercel.app/](ishu-igdtuw-portfolio.vercel.app/)
 
 ---
 
