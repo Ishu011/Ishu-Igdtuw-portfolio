@@ -8,7 +8,7 @@ import fraud from "../../Assets/Projects/fraud.png";
 import grocery from "../../Assets/Projects/grocery.png";
 
 function Projects() {
-  const descriptionStyle = { whiteSpace: "pre-line" };  // Enables line breaks
+  const descriptionStyle = { whiteSpace: "pre-line" };  
 
   return (
     <Container fluid className="project-section">
@@ -27,10 +27,28 @@ function Projects() {
             <ProjectCard
               imgPath={movie}
               isBlog={false}
-              title="🎬 Cinematic Genius: Movie Recommender System"
-              description={`Built a personalized movie recommendation system using content-based filtering and ML techniques. It uses TMDb API for real-time movie data and offers Features: Movie search, Detailed movie info, Appearance customization options , Personalized recommendations.\n`}
-              ghLink="https://github.com/Ishu011/Cinematic-Genius-Movie-Recommender-System.git"
-              demoLink="https://drive.google.com/file/d/1inv4Z2lg3a93yUzuhWN6AyhlbTONuBlL/view?usp=sharing"
+              title="Cinematic Genius: Movie Recommender System"
+              description={`Cinematic-Genius-Movie-Recommender-System is a movie recommender system that harnesses the power of content-based filtering techniques to offer personalized movie suggestions. 
+                This application not only helps users discover new movies but also provides detailed information on each recommendation, including title, release date, rating, main characters, and posters. 
+                The system is powered by cutting-edge machine learning algorithms and integrates seamlessly with The Movie Database (TMDb) API for fetching up-to-date 5000+ movie details.\n`}
+              ghLink="https://github.com/Ishu011/CINEMATIC-GENIUS"
+              demoLink="https://cinematic-genius-by-ishu-recommender-system.streamlit.app/"
+              style={descriptionStyle}
+            />
+          </Col>
+
+          {/* FashionTrend */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={fraud}
+              isBlog={false}
+              title="FashionTrend – E-Commerce Website Application"
+              description={`FashionTrend is an e-commerce web application , built using React, TypeScript, Tailwind CSS, Vite, and React Router.
+It showcases over 70 products across 4 categories, each with detailed product pages.
+I implemented key e-commerce features like cart and wishlist management, real-time search, category and price-based filters, and secure user authentication.
+My focus was on delivering a smooth, intuitive shopping experience while keeping the UI clean and modern\n`}
+              ghLink="https://github.com/Ishu011/FashionTrend"
+               demoLink="https://cinematic-genius-by-ishu-recommender-system.streamlit.app/"
               style={descriptionStyle}
             />
           </Col>
@@ -50,19 +68,7 @@ Implemented essential functionalities like Shift, Caps Lock, and sentence predic
             />
           </Col>
 
-          {/* Fraud Detection */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={fraud}
-              isBlog={false}
-              title="💳 Advanced Fraud Detection in Financial Transactions"
-              description={`Developed ML models to accurately detect and classify fraudulent financial transactions.\n
-Used advanced data preprocessing and feature engineering to reduce false positives and improve model precision.\n
-Submitted as part of PRASUNETHON Hackathon under Prasunet Company.\n`}
-              ghLink="https://github.com/Ishu011/Advanced-Fraud-Detection-in-Financial-Transactions-Using-Machine-Learning.git"
-              style={descriptionStyle}
-            />
-          </Col>
+          
 
           {/* Grocery App */}
           <Col md={4} className="project-card">
