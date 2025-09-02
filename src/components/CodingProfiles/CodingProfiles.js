@@ -6,6 +6,7 @@ import { FaClipboardList } from "react-icons/fa"; // Placeholder icon for Take U
 // Badge images
 import badge50 from "../../Assets/50 Days badge.png";
 import badge100 from "../../Assets/100 Days badge.png";
+import badge200 from "../../Assets/leetcode 200 days.png"; // ✅ Added 200 days badge
 
 function CodingProfiles() {
   const [showBadges, setShowBadges] = useState(false);
@@ -78,7 +79,7 @@ function CodingProfiles() {
     backgroundColor: "#b84dff",
     border: "none",
     fontSize: "1rem",
-    padding: "52px 24px",
+    padding: "12px 24px",
     borderRadius: "8px",
     fontWeight: "600",
     color: "#fff",
@@ -106,7 +107,8 @@ function CodingProfiles() {
       <h2 style={titleStyle}>💻 Coding Profiles</h2>
       <p style={descriptionStyle}>
         Here are my active profiles on top coding platforms. These reflect my
-        problem-solving skills and continuous learning.  I enjoy solving problems, taking on challenges, and leveling up my DSA.
+        problem-solving skills and continuous learning. I enjoy solving problems,
+        taking on challenges, and leveling up my DSA.
       </p>
 
       <div style={buttonContainerStyle}>
@@ -147,14 +149,30 @@ function CodingProfiles() {
         </Button>
       </div>
 
-      <button style={badgeToggleStyle} onClick={() => setShowBadges(!showBadges)}>
+      <button
+        style={badgeToggleStyle}
+        onClick={() => setShowBadges(!showBadges)}
+      >
         {showBadges ? "Hide LeetCode Badges" : "Show LeetCode Badges"}
       </button>
 
       {showBadges && (
         <div style={badgeContainerStyle}>
-          <img src={badge50} alt="LeetCode 50 Days Badge" style={badgeImageStyle} />
-          <img src={badge100} alt="LeetCode 100 Days Badge" style={badgeImageStyle} />
+          <img
+            src={badge50}
+            alt="LeetCode 50 Days Badge"
+            style={badgeImageStyle}
+          />
+          <img
+            src={badge100}
+            alt="LeetCode 100 Days Badge"
+            style={badgeImageStyle}
+          />
+          <img
+            src={badge200}
+            alt="LeetCode 200 Days Badge"
+            style={badgeImageStyle}
+          />
         </div>
       )}
     </div>

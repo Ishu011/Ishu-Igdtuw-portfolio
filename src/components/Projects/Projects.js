@@ -53,6 +53,25 @@ My focus was on delivering a smooth, intuitive shopping experience while keeping
             />
           </Col>
 
+          {/* Grocery App */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={grocery}
+              isBlog={false}
+              title="ALGOVISION – DSA Visualization Application"
+              description={`An interactive web application designed to simplify learning Data Structures and Algorithms through visual demonstrations and step-by-step animations.
+Features: Visualizations for Arrays, Linked Lists, Stacks, Queues, Trees, Graphs; Sorting & Searching algorithms; Dynamic Programming problems.
+Educational Tools: Step-by-step execution, time complexity analysis, color-coded visual feedback, and interactive controls.\n
+Tech Stack: React.js, Vite, CSS, Lucide React.\n
+Design: Modern UI with responsive grid layouts, smooth animations, accessibility support, and cross-device compatibility.\n
+👉 Built to make DSA concepts engaging, interactive, and easy to understand for learners.`}
+              ghLink="https://github.com/Ishu011/ALGOVISION.git"
+              demoLink="https://algovision-ishu.vercel.app/"
+              style={descriptionStyle}
+            />
+          </Col>
+
+
           {/* Virtual Keyboard */}
           <Col md={4} className="project-card">
             <ProjectCard
@@ -70,21 +89,7 @@ Implemented essential functionalities like Shift, Caps Lock, and sentence predic
 
           
 
-          {/* Grocery App */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={grocery}
-              isBlog={false}
-              title="🛒 SmartShopCart: Personalized Online Grocery Store"
-              description={`[Ongoing Project]\n
-Designing an intelligent grocery shopping platform that learns user preferences over time.\n
-Planning to integrate recommendation systems, dynamic pricing, and real-time inventory tracking.\n
- Vision:\n• Personalized product feed\n• Cart optimization\n• Smart category prediction`}
-              ghLink=""
-              demoLink=""
-              style={descriptionStyle}
-            />
-          </Col>
+          
           
         </Row>
       </Container>
